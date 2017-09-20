@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -52,45 +53,74 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="3" adjustsLetterSpacingToFitWidth="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2u2-fd-xo6">
-                                <rect key="frame" x="118" y="28" width="30" height="20.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If positive input" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="igu-VY-Jho">
+                                <rect key="frame" x="126.5" y="538" width="123" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="IMK-Zb-Wxh"/>
+                                    <constraint firstAttribute="height" constant="20.5" id="MvN-vi-YAD"/>
+                                    <constraint firstAttribute="width" secondItem="igu-VY-Jho" secondAttribute="height" multiplier="117:20" id="xnG-TM-s3a"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="j0O-u7-eou">
-                                <rect key="frame" x="118" y="56" width="33" height="30"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Example: Email confirmation not completed" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uol-3k-WAH">
+                                <rect key="frame" x="22" y="339" width="331" height="21"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="5mu-Pa-2KT"/>
-                                    <constraint firstAttribute="width" secondItem="j0O-u7-eou" secondAttribute="height" multiplier="11:10" id="9zG-SK-Cc8"/>
-                                    <constraint firstAttribute="width" constant="33" id="YvX-bC-xWQ"/>
+                                    <constraint firstAttribute="width" secondItem="uol-3k-WAH" secondAttribute="height" multiplier="331:21" id="RN2-jB-7hb"/>
+                                    <constraint firstAttribute="width" constant="331" id="sZt-M7-up9"/>
+                                    <constraint firstAttribute="height" constant="21" id="xNA-8s-2Xa"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="ageText:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="jK9-63-C2T"/>
-                                    <action selector="ageTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="ath-Fy-qvR"/>
-                                    <action selector="ageTextField:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="rQD-ZH-mbd"/>
-                                </connections>
-                            </textField>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="JS1-Bk-I7V">
+                                <rect key="frame" x="67" y="267" width="252" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shake button for negative input" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="1" adjustsLetterSpacingToFitWidth="YES" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2u2-fd-xo6">
+                                        <rect key="frame" x="0.0" y="0.0" width="252" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20.5" id="Ikh-o0-1l4"/>
+                                    <constraint firstAttribute="width" constant="240" id="Q8b-20-3kx"/>
+                                    <constraint firstAttribute="width" secondItem="JS1-Bk-I7V" secondAttribute="height" multiplier="12:1" id="Qgd-eK-gj1"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="All buttons to animate like this when tapped" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zAf-N6-V5F">
+                                <rect key="frame" x="16" y="509" width="343" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="zAf-N6-V5F" secondAttribute="height" multiplier="49:3" id="Qer-Q8-bqs"/>
+                                    <constraint firstAttribute="height" constant="21" id="pAp-Fe-mjU"/>
+                                    <constraint firstAttribute="width" constant="343" id="y97-d1-sVz"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="hu9-4K-xhn" secondAttribute="bottom" constant="190" id="0Su-Vo-wfl"/>
-                            <constraint firstItem="2u2-fd-xo6" firstAttribute="leading" secondItem="j0O-u7-eou" secondAttribute="leading" id="GEN-Ia-ekV"/>
+                            <constraint firstItem="JS1-Bk-I7V" firstAttribute="top" secondItem="G0g-yB-enP" secondAttribute="bottom" constant="7" id="2jw-fs-IK5"/>
+                            <constraint firstItem="uol-3k-WAH" firstAttribute="centerX" secondItem="igu-VY-Jho" secondAttribute="centerX" id="C9B-T1-Gq3"/>
                             <constraint firstItem="G0g-yB-enP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="210" id="GUK-Ui-a0Y"/>
-                            <constraint firstItem="2u2-fd-xo6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="N5c-Vh-boa"/>
-                            <constraint firstItem="j0O-u7-eou" firstAttribute="leading" secondItem="G0g-yB-enP" secondAttribute="leading" id="V8W-Cc-9rU"/>
+                            <constraint firstItem="igu-VY-Jho" firstAttribute="top" secondItem="zAf-N6-V5F" secondAttribute="bottom" constant="8" symbolic="YES" id="Mph-2P-zwf"/>
+                            <constraint firstItem="zAf-N6-V5F" firstAttribute="top" secondItem="hu9-4K-xhn" secondAttribute="bottom" constant="32" id="YyG-BR-zX9"/>
                             <constraint firstItem="G0g-yB-enP" firstAttribute="leading" secondItem="hu9-4K-xhn" secondAttribute="leading" id="jat-0u-kig"/>
-                            <constraint firstItem="j0O-u7-eou" firstAttribute="top" secondItem="2u2-fd-xo6" secondAttribute="bottom" constant="8" symbolic="YES" id="oTW-Wo-Vu0"/>
+                            <constraint firstItem="zAf-N6-V5F" firstAttribute="centerX" secondItem="igu-VY-Jho" secondAttribute="centerX" id="lhN-uB-9UC"/>
+                            <constraint firstItem="JS1-Bk-I7V" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="51" id="mWb-X6-9VQ"/>
                             <constraint firstItem="G0g-yB-enP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oWp-9P-b0O"/>
+                            <constraint firstItem="uol-3k-WAH" firstAttribute="top" secondItem="JS1-Bk-I7V" secondAttribute="bottom" constant="51" id="t8g-4m-hxP"/>
+                            <constraint firstItem="uol-3k-WAH" firstAttribute="centerX" secondItem="G0g-yB-enP" secondAttribute="centerX" id="vGQ-nC-w1G"/>
                             <constraint firstItem="G0g-yB-enP" firstAttribute="trailing" secondItem="hu9-4K-xhn" secondAttribute="trailing" id="wyo-GF-ggG"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="ageTextField" destination="j0O-u7-eou" id="Rhj-j4-03i"/>
                         <outlet property="bounceButton" destination="hu9-4K-xhn" id="r3h-Xj-oGI"/>
                         <outlet property="shakeButton" destination="6SG-FV-00j" id="2rC-bn-SEO"/>
                     </connections>

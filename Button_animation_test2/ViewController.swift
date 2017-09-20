@@ -13,7 +13,6 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var bounceButton: UIButton!
     
-    @IBOutlet weak var ageTextField: UITextField!
     
     
     override func viewDidLoad() {
@@ -33,10 +32,6 @@ class ViewController: UIViewController {
     
     @IBAction func bounceButton(_ sender: UIButton) {
         sender.bounce()
-    }
-
-    @IBAction func ageTextField(_ sender: UITextField) {
-        sender.shake()
     }
 
 }
@@ -66,20 +61,7 @@ extension UIButton {
     }
 }
 
-extension UITextField {
-    
-    func shake() {
-        let animation = CABasicAnimation(keyPath: "position")
-        animation.duration = 0.05
-        animation.repeatCount = 5
-        animation.autoreverses = true
-        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x-4, y: self.center.y))
-        animation.fromValue = NSValue(cgPoint: CGPoint(x: self.center.x+4, y: self.center.y))
-        
-        self.layer.add(animation, forKey: "position")
-        
-    }
-}
+
 
 
 
